@@ -12,17 +12,15 @@ function App() {
         <p>
           Robert Costello
           <br />
-          Full Stack Engineer
         </p>
         <Pitch />
         <p>
-          Hello, I'm Robert. I am a full stack engineer with a fine art
-          background.
+          Hello, I'm Robert. I am a painter turned full stack engineer.
           <br />
         </p>
       </header>
-      <ExternalLinks />
       <Resume />
+      <ExternalLinks />
     </div>
   )
 }

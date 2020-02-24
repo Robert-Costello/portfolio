@@ -23,6 +23,7 @@
   font-size: calc(20px + 2vmin);
   color: white;
   padding: calc(20px + 2vmin);
+  z-index: 1;
 }
 
 p {
