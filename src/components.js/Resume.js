@@ -22,6 +22,13 @@ class Resume extends Component {
         >
           <Page pageNumber={pageNumber} />
         </Document>
+        <a
+          href={RobertCostelloResume}
+          download="RobertCostelloResume.pdf"
+          class="button resumeDownload"
+        >
+          DOWNLOAD
+        </a>
       </div>
     )
   }
