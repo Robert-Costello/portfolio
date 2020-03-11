@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 /* .App-logo {
@@ -26,8 +28,37 @@
   z-index: 1;
 }
 
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: linear-gradient(130deg, #78378c 0, #12ba93 100%);
+}
+
+a {
+  text-decoration: none;
+
+  color: #78378c;
+}
+
+#portfolioImage {
+  max-height: calc(300px + 2vmin);
+}
 p {
   /* color: #291842; */
+}
+
+.headerLinks {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  align-items: center;
+  font-size: calc(5px + 2vmin);
+}
+
+.headerLink {
+  color: white;
+  text-decoration: none;
 }
 
 .aboutLinks {
@@ -52,8 +83,10 @@ p {
 }
 
 #resume {
+  text-decoration: none;
   background-color: linear-gradient(130deg, #78378c 0, #12ba93 100%);
   color: #78378c;
+  justify-content: center;
 }
 
 @keyframes App-logo-spin {
