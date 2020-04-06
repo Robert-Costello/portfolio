@@ -2,7 +2,7 @@ import React from 'react'
 import Resume from './Resume'
 function Body() {
   return (
-    <div classname="body">
+    <div className="body">
       <div>
         <Resume />
       </div>

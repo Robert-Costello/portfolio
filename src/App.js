@@ -4,16 +4,22 @@ import './App.css'
 import Navbar from './components.js/Navbar'
 import Routes from './components.js/Routes'
 import ExternalLinks from './components.js/ExternalLinks'
-import Body from './components.js/Body'
+import Modal from './components.js/Modal'
 function App() {
   return (
     <div className="App">
       <Navbar />
-
-      <div className="body">
-        <Body />
-        <Routes />
-      </div>
+      <div className="body">{/* <Routes /> */}</div>
+      <ExternalLinks />
+      <ExternalLinks />
+      <ExternalLinks />
+      <ExternalLinks />
+      <ExternalLinks />
+      <ExternalLinks />
+      <ExternalLinks />
+      <ExternalLinks />
+      <ExternalLinks />
+      <ExternalLinks />
       <ExternalLinks />
     </div>
   )

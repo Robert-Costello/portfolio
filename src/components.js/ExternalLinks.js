@@ -15,6 +15,7 @@ class ExternalLinks extends Component {
           >
             <img id="email" src={EmailTeal} alt=""></img>
           </a> */}
+
           <a
             href="https://github.com/Robert-Costello"
             target="_blank"

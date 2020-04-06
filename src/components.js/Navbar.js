@@ -1,26 +1,20 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import portfolioImage from '../images/portfolioImage.png'
-
+import Modal from './Modal'
 import LinkedinWhite from '../images/LinkedinWhite.png'
 import GithubWhite from '../images/GithubWhite.png'
 const Navbar = () => {
   return (
-    <div>
-      <header className="App-header">
+    <div className="App-header">
+      <div>
         <p>
           Robert Costello
           <br />
         </p>
         <img id="portfolioImage" src={portfolioImage} alt="" />
-        <p>
-          Hello, I'm Robert. I am a full stack engineer.
-          <br />
-        </p>
+        {/* <p>Hello, I'm Robert. I am a full stack engineer.</p> */}
         <div className="headerLinks">
-          {/* <NavLink className="headerLink" to="/resume">
-            Resume
-          </NavLink> */}
           <a
             href="https://github.com/Robert-Costello"
             target="_blank"
@@ -28,6 +22,7 @@ const Navbar = () => {
           >
             <img id="github" src={GithubWhite} alt=""></img>
           </a>
+
           <a
             href="https://www.linkedin.com/in/robertecostello/"
             target="_blank"
@@ -35,8 +30,9 @@ const Navbar = () => {
           >
             <img id="linkedin" src={LinkedinWhite} alt=""></img>
           </a>
+          <Modal />
         </div>
-      </header>
+      </div>
     </div>
   )
 }
