@@ -21,14 +21,14 @@ class Resume extends Component {
           onLoadSuccess={this.onDocumentLoadSuccess}
         >
           <Page pageNumber={pageNumber} />
+          <a
+            href={RobertCostelloResume}
+            download="RobertCostelloResume.pdf"
+            className="buttonResumeDownload"
+          >
+            <button>DOWNLOAD</button>
+          </a>
         </Document>
-        <a
-          href={RobertCostelloResume}
-          download="RobertCostelloResume.pdf"
-          class="button resumeDownload"
-        >
-          DOWNLOAD
-        </a>
       </div>
     )
   }
