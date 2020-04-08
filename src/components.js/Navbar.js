@@ -6,14 +6,14 @@ import LinkedinWhite from '../images/LinkedinWhite.png'
 import GithubWhite from '../images/GithubWhite.png'
 const Navbar = () => {
   return (
-    <div className="App-header">
+    <div className="navbar">
       <div>
         <p>
           Robert Costello
           <br />
         </p>
         <img id="portfolioImage" src={portfolioImage} alt="" />
-        {/* <p>Hello, I'm Robert. I am a full stack engineer.</p> */}
+
         <div className="headerLinks">
           <a
             href="https://github.com/Robert-Costello"
