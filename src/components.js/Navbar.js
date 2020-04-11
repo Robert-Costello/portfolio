@@ -7,7 +7,7 @@ import GithubWhite from '../images/GithubWhite.png'
 const Navbar = () => {
   return (
     <div className="navbar">
-      <div>
+      <div className="nav-items">
         <p>
           Robert Costello
           <br />

@@ -46,7 +46,6 @@ body::-webkit-scrollbar-thumb {
   /* max-height: 0.1vh; */
   display: flex;
   position: fixed;
-  top: 0;
   width: 15rem;
   height: 100vh;
   flex-direction: column;
@@ -58,6 +57,10 @@ body::-webkit-scrollbar-thumb {
   z-index: 1;
 }
 
+.nav-items {
+  margin-top: 1vh;
+}
+
 .body {
   display: flex;
   flex-direction: column;
@@ -67,7 +70,7 @@ body::-webkit-scrollbar-thumb {
   font-size: calc(20px + 2vmin);
   color: white;
   height: 100%;
-  margin-left: 5rem;
+  margin-left: 10rem;
 }
 
 .body:last-child {
@@ -87,12 +90,15 @@ body::-webkit-scrollbar-thumb {
   background-color: rgba(154, 177, 175, 0.3);
   border-radius: 10px;
   width: 35%;
+  position: relative;
 }
 
 #hi {
-  border: none;
   background-color: rgba(154, 177, 175, 0);
-  /* margin-top: 0; */
+
+  font-size: 3.3rem;
+
+  font-weight: 250;
 }
 
 .project-image {
@@ -112,10 +118,37 @@ body::-webkit-scrollbar-thumb {
 }
 
 p {
+  display: flex;
   margin: 15px;
-  align-self: center;
   overflow-wrap: normal;
-  width: 80%;
+  align-self: center;
+}
+
+h3 {
+  display: flex;
+  margin: 15px;
+  overflow-wrap: normal;
+  align-self: center;
+  font-size: 1.5rem;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 250;
+}
+
+a {
+  align-self: center;
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: #12ba93;
+}
+
+.project-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
 }
 
 button {
@@ -176,6 +209,14 @@ a {
   align-self: center;
 }
 
+#github-body {
+  max-height: calc(15px + 2vmin);
+  margin: 15px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
 #linkedin {
   margin: calc(10px + 2vmin);
   max-height: calc(15px + 2vmin);
@@ -201,10 +242,6 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-/* #page {
-  height: 70vh;
-} */
 
 /* @keyframes App-logo-spin {
   from {
