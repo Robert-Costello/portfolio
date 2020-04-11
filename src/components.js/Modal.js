@@ -18,13 +18,9 @@ function Modal() {
   }, [])
 
   return (
-    <div ref={inside}>
+    <div id="modal" ref={inside}>
       <button onClick={() => setIsOpen(!isOpen)}>Resume</button>
-      {isOpen ? (
-        <div>
-          <Resume />
-        </div>
-      ) : null}
+      {isOpen ? <Resume /> : null}
     </div>
   )
 }

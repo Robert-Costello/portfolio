@@ -20,7 +20,7 @@ class Resume extends Component {
           file={RobertCostelloResume}
           onLoadSuccess={this.onDocumentLoadSuccess}
         >
-          <Page renderMode="canvas" pageNumber={pageNumber} />
+          <Page id="page" renderMode="canvas" pageNumber={pageNumber} />
           <a
             href={RobertCostelloResume}
             download="RobertCostelloResume.pdf"
