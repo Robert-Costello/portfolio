@@ -120,15 +120,15 @@ p {
 
 button {
   text-decoration: none;
-  color: #78378c;
+  color: #12ba93;
   cursor: pointer;
   margin: 10px;
   font-size: 1rem;
 }
 
 button:hover {
+  color: #78378c;
   text-decoration: none;
-  color: #12ba93;
   cursor: pointer;
   margin: 10px;
 }
@@ -195,13 +195,16 @@ a {
   justify-content: center;
   z-index: 1;
   height: max-content;
-  /* margin: 20px; */
   padding: 30px;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+/* #page {
+  height: 70vh;
+} */
 
 /* @keyframes App-logo-spin {
   from {
