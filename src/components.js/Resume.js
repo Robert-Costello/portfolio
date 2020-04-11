@@ -11,6 +11,7 @@ class Resume extends Component {
 
   onDocumentLoadSuccess = ({ numPages }) => {
     this.setState({ numPages })
+    // console.log(this.props.scale)
   }
   render() {
     const { pageNumber } = this.state
@@ -20,7 +21,12 @@ class Resume extends Component {
           file={RobertCostelloResume}
           onLoadSuccess={this.onDocumentLoadSuccess}
         >
-          <Page id="page" renderMode="canvas" pageNumber={pageNumber} />
+          <Page
+            id="page"
+            renderMode="canvas"
+            pageNumber={pageNumber}
+            scale={0.85}
+          />
           <a
             href={RobertCostelloResume}
             download="RobertCostelloResume.pdf"
