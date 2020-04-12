@@ -16,6 +16,7 @@ const Navbar = () => {
 
         <div className="headerLinks">
           <a
+            id="nav-icon"
             href="https://github.com/Robert-Costello"
             target="_blank"
             rel="noopener noreferrer"
@@ -24,6 +25,7 @@ const Navbar = () => {
           </a>
 
           <a
+            id="nav-icon"
             href="https://www.linkedin.com/in/robertecostello/"
             target="_blank"
             rel="noopener noreferrer"

@@ -85,7 +85,7 @@ body::-webkit-scrollbar-thumb {
   justify-content: space-evenly;
   padding: 80px;
   margin-left: 10rem;
-  margin: 40px;
+  margin: 25px;
   /* border: 5px solid rgba(154, 177, 175, 0.5); */
   background-color: rgba(154, 177, 175, 0.3);
   border-radius: 10px;
@@ -95,7 +95,7 @@ body::-webkit-scrollbar-thumb {
 
 #hi {
   background-color: rgba(154, 177, 175, 0);
-
+  padding: 0;
   font-size: 3.3rem;
 
   font-weight: 250;
@@ -153,14 +153,21 @@ a:hover {
 
 button {
   text-decoration: none;
-  color: #12ba93;
+  color: inherit;
   cursor: pointer;
   margin: 10px;
+  height: 1.5rem;
   font-size: 1rem;
+  border-radius: 5px;
+  font-weight: 650;
+  background: linear-gradient(0deg, #583961, #9a5aad 50%);
+  border: none;
 }
 
 button:hover {
-  color: #78378c;
+  color: white;
+  background: linear-gradient(0deg, #4f776e 15%, #76cab7 80%);
+  border-color: none;
   text-decoration: none;
   cursor: pointer;
   margin: 10px;
@@ -172,7 +179,6 @@ button:focus {
 
 #portfolioImage {
   max-height: 10rem;
-  /* calc(300px + 2vmin); */
 }
 
 a {
@@ -185,11 +191,7 @@ a {
   align-self: flex-start;
   align-items: center;
   font-size: calc(5px + 2vmin);
-}
-
-.headerLink {
-  color: white;
-  text-decoration: none;
+  margin: 0;
 }
 
 .aboutLinks {
@@ -207,6 +209,13 @@ a {
   margin: calc(10px + 2vmin);
   max-height: calc(15px + 2vmin);
   align-self: center;
+  margin-bottom: 5px;
+}
+
+#linkedin {
+  margin: calc(10px + 2vmin);
+  margin-top: 5px;
+  max-height: calc(15px + 2vmin);
 }
 
 #github-body {
@@ -215,11 +224,6 @@ a {
   position: absolute;
   bottom: 0px;
   right: 0px;
-}
-
-#linkedin {
-  margin: calc(10px + 2vmin);
-  max-height: calc(15px + 2vmin);
 }
 
 .react-pdf__Page__canvas {
