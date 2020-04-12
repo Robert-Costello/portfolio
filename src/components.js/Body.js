@@ -25,7 +25,7 @@ function Body() {
           <h3>
             {' '}
             Mind Over Matter is a mental health analytics platform that uses
-            facial recognition software track the user's emotional state
+            facial recognition software to track the user's emotional state
             throughout the work day.
             <br />
             <br />
