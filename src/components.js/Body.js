@@ -8,7 +8,7 @@ function Body() {
   return (
     <div className="body">
       <div className="project" id="hi">
-        <p>Hi, I'm Robert. I am a full stack software engineer.</p>
+        <p>Hi, I'm Robert. I'm a full stack software engineer.</p>
       </div>
       {/* ===================================== */}
 
@@ -29,8 +29,8 @@ function Body() {
             throughout the work day.
             <br />
             <br />
-            React | Redux | Express | Passport | PostgreSQL | Face-api.js |
-            Chart.js | D3.js
+            Built with React, Redux, Express, Passport, PostgreSQL, Face-api.js,
+            Chart.js and D3.js
           </h3>
         </div>
         <a
@@ -55,7 +55,7 @@ function Body() {
             Marvels Relics is a fully functional mock e-commerce website
             <br />
             <br />
-            React | Redux | Express | Passport | PostgreSQL
+            Built with React, Redux, Express, Passport and PostgreSQL
           </h3>
         </div>
         <a
@@ -85,7 +85,7 @@ function Body() {
             navigates the web using facial expressions.
             <br />
             <br />
-            React | Face-api.js
+            Built with React and Face-api.js
           </h3>
         </div>
         <a href="https://github.com/Robert-Costello/face-nav" target="_blank">
@@ -110,7 +110,7 @@ function Body() {
             classic Snake Game
             <br />
             <br />
-            P5.js
+            Built with P5.js
           </h3>
         </div>
         <a
