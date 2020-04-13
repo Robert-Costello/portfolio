@@ -7,17 +7,21 @@ const FNav = require('../images/FNav.mp4')
 function Body() {
   return (
     <div className="body">
-      <div className="project" id="hi">
-        <p>Hi, I'm Robert. I'm a full stack software engineer.</p>
+      <div id="hi">
+        <p>
+          Hi, I'm Robert.
+          <br />
+          I'm a full stack software engineer.
+        </p>
       </div>
       {/* ===================================== */}
 
       <div className="project">
         <a href="https://mind-over-matter.herokuapp.com/" target="_blank">
           <p>Mind Over Matter</p>
-        </a>
+          {/* </a>
 
-        <a href="https://mind-over-matter.herokuapp.com/" target="_blank">
+        <a href="https://mind-over-matter.herokuapp.com/" target="_blank"> */}
           <img className="project-image" src={MM}></img>
         </a>
 
@@ -46,8 +50,8 @@ function Body() {
       <div className="project">
         <a href="https://marvel-relics.herokuapp.com/" target="_blank">
           <p>Marvels Relics</p>
-        </a>
-        <a href="https://marvel-relics.herokuapp.com/" target="_blank">
+          {/* </a>
+        <a href="https://marvel-relics.herokuapp.com/" target="_blank"> */}
           <img className="project-image" src={MR}></img>
         </a>
         <div className="description">
@@ -70,15 +74,15 @@ function Body() {
       <div className="project">
         <a href="https://face-nav.firebaseapp.com/" target="_blank">
           <p>Face Navigator</p>
+          <video
+            className="project-image"
+            src={FNav}
+            preload="true"
+            loop
+            controls
+            autoPlay
+          ></video>
         </a>
-        <video
-          className="project-image"
-          src={FNav}
-          preload="true"
-          loop
-          controls
-          autoPlay
-        ></video>
         <div className="description">
           <h3>
             Face Navigator is a fun proof of concept for an application that
