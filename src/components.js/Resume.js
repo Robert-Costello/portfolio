@@ -25,7 +25,8 @@ class Resume extends Component {
             id="page"
             renderMode="canvas"
             pageNumber={pageNumber}
-            scale={0.85}
+            // scale={0.85}
+            width={450}
           />
           <a
             href={RobertCostelloResume}

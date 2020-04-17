@@ -17,12 +17,16 @@ function Body() {
       {/* ===================================== */}
 
       <div className="project">
-        <a href="https://mind-over-matter.herokuapp.com/" target="_blank">
+        <a
+          href="https://mind-over-matter.herokuapp.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <p>Mind Over Matter</p>
           {/* </a>
 
         <a href="https://mind-over-matter.herokuapp.com/" target="_blank"> */}
-          <img className="project-image" src={MM}></img>
+          <img className="project-image" src={MM} alt=""></img>
         </a>
 
         <div className="description">
@@ -41,6 +45,7 @@ function Body() {
           href="https://github.com/FullstackHeroes/Mind-Over-Matter
           "
           target="_blank"
+          rel="noopener noreferrer"
         >
           <img id="github-body" src={GithubWhite} alt=""></img>
         </a>
@@ -48,11 +53,15 @@ function Body() {
 
       {/* ===================================== */}
       <div className="project">
-        <a href="https://marvel-relics.herokuapp.com/" target="_blank">
+        <a
+          href="https://marvel-relics.herokuapp.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <p>Marvels Relics</p>
           {/* </a>
         <a href="https://marvel-relics.herokuapp.com/" target="_blank"> */}
-          <img className="project-image" src={MR}></img>
+          <img className="project-image" src={MR} alt=""></img>
         </a>
         <div className="description">
           <h3>
@@ -65,6 +74,7 @@ function Body() {
         <a
           href="https://github.com/RDJGraceShopper/graceshopper"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <img id="github-body" src={GithubWhite} alt=""></img>
         </a>
@@ -72,7 +82,11 @@ function Body() {
 
       {/* ===================================== */}
       <div className="project">
-        <a href="https://face-nav.firebaseapp.com/" target="_blank">
+        <a
+          href="https://face-nav.firebaseapp.com/camera"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <p>Face Navigator</p>
           <video
             className="project-image"
@@ -92,34 +106,45 @@ function Body() {
             Built with React and Face-api.js
           </h3>
         </div>
-        <a href="https://github.com/Robert-Costello/face-nav" target="_blank">
+        <a
+          href="https://github.com/Robert-Costello/face-nav"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img id="github-body" src={GithubWhite} alt=""></img>
         </a>
       </div>
 
       {/* ===================================== */}
       <div className="project">
-        <p>Snake Game of Life</p>
-        <video
-          className="project-image"
-          src={SGL}
-          preload="true"
-          loop
-          controls
-          autoPlay
-        ></video>
+        <a
+          href="https://snake-game-of-life.firebaseapp.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <p>Snake Game of Life</p>
+          <video
+            className="project-image"
+            src={SGL}
+            preload="true"
+            loop
+            controls
+            autoPlay
+          ></video>
+        </a>
         <div className="description">
           <h3>
             Snake Game of Life is a combination of Conway's Game of Life and the
             classic Snake Game
             <br />
             <br />
-            Built with P5.js
+            Built with React and P5.js
           </h3>
         </div>
         <a
           href="https://github.com/Robert-Costello/snake-game-of-life"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <img id="github-body" src={GithubWhite} alt=""></img>
         </a>
