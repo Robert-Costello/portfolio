@@ -246,12 +246,13 @@ a {
   color: #505ca0;
   justify-content: center;
   z-index: 1;
-  height: max-content;
+  /* height: auto; */
   padding: 30px;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  margin: 0;
 }
 
 /* @keyframes App-logo-spin {

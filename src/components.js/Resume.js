@@ -4,9 +4,34 @@ import { Document, Page, pdfjs } from 'react-pdf'
 pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`
 
 class Resume extends Component {
-  state = {
-    numPages: null,
-    pageNumber: 1,
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      numPages: null,
+      pageNumber: 1,
+      width: 0,
+      height: 0,
+    }
+    this.updateWindowDims = this.updateWindowDims.bind(this)
+  }
+
+  componentDidMount() {
+    this.updateWindowDims()
+    window.addEventListener('resize', this.updateWindowDims)
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateWindowDims)
+  }
+
+  updateWindowDims() {
+    if (window.innerHeight < 600) {
+      this.setState({ height: 500 })
+    } else {
+      this.setState({ width: window.innerWidth, height: window.innerHeight })
+      console.log(this.state.width, this.state.height)
+    }
   }
 
   onDocumentLoadSuccess = ({ numPages }) => {
@@ -22,18 +47,18 @@ class Resume extends Component {
           onLoadSuccess={this.onDocumentLoadSuccess}
         >
           <Page
+            // style={{ width: '100vw' }}
             id="page"
             renderMode="canvas"
             pageNumber={pageNumber}
-            // scale={0.85}
-            width={450}
+            height={this.state.height * 0.8}
           />
           <a
             href={RobertCostelloResume}
             download="RobertCostelloResume.pdf"
             className="buttonResumeDownload"
           >
-            <button>DOWNLOAD</button>
+            <button style={{ margin: 0 }}>DOWNLOAD</button>
           </a>
         </Document>
       </div>
