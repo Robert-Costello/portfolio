@@ -30,13 +30,11 @@ class Resume extends Component {
       this.setState({ height: 500 })
     } else {
       this.setState({ width: window.innerWidth, height: window.innerHeight })
-      console.log(this.state.width, this.state.height)
     }
   }
 
   onDocumentLoadSuccess = ({ numPages }) => {
     this.setState({ numPages })
-    // console.log(this.props.scale)
   }
   render() {
     const { pageNumber } = this.state
