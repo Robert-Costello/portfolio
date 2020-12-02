@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import RobertCostelloResume from '../images/RobertCostelloResume.pdf'
+import RobertCostelloResume from '../images/Robert_Costello_Resume.pdf'
 import { Document, Page, pdfjs } from 'react-pdf'
 pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`
 
@@ -53,7 +53,7 @@ class Resume extends Component {
           />
           <a
             href={RobertCostelloResume}
-            download="RobertCostelloResume.pdf"
+            download="Robert_Costello_Resume.pdf"
             className="buttonResumeDownload"
           >
             <button style={{ margin: 0 }}>DOWNLOAD</button>
