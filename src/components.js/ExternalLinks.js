@@ -8,14 +8,6 @@ class ExternalLinks extends Component {
     return (
       <div>
         <div className="aboutLinks">
-          {/* <a
-            href="mailto:robertedwardcostello@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img id="email" src={EmailTeal} alt=""></img>
-          </a> */}
-
           <a
             href="https://github.com/Robert-Costello"
             target="_blank"

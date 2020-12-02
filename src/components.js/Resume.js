@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import RobertCostelloResume from '../images/Robert_Costello_Resume.pdf'
+import RCResume from '../RobertCostello_Resume.pdf'
 import { Document, Page, pdfjs } from 'react-pdf'
 pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`
 
@@ -40,10 +40,7 @@ class Resume extends Component {
     const { pageNumber } = this.state
     return (
       <div id="resume">
-        <Document
-          file={RobertCostelloResume}
-          onLoadSuccess={this.onDocumentLoadSuccess}
-        >
+        <Document file={RCResume} onLoadSuccess={this.onDocumentLoadSuccess}>
           <Page
             // style={{ width: '100vw' }}
             id="page"
@@ -52,7 +49,7 @@ class Resume extends Component {
             height={this.state.height * 0.8}
           />
           <a
-            href={RobertCostelloResume}
+            href={RCResume}
             download="Robert_Costello_Resume.pdf"
             className="buttonResumeDownload"
           >
